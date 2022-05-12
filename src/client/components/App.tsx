@@ -21,7 +21,7 @@ const App = ({}) => {
 
     const onCancel = () => cancel();
 
-    // Initializing hook
+    // Initializing, reading messages from Plugin code
     React.useEffect(() => {
         window.addEventListener('message', event => {
             const {type, data} = event.data.pluginMessage;

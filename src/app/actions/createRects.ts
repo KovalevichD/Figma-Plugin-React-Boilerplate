@@ -22,7 +22,9 @@ const createRects = (messageType: string, message: Message): void => {
         data: {message: `Created ${message.data} Rectangles`}
     }
     //let's make an example of a delay of 2 seconds
-    setTimeout(() => {figma.ui.postMessage(postMessage)}, 2000)
+    setTimeout(() => {
+        figma.ui.postMessage(postMessage)
+    }, 2000)
 }
 
 export default createRects;
